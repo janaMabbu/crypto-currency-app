@@ -1,0 +1,40 @@
+{
+  "env": {
+    "production": {
+      "presets": [
+        ["es2015", { "modules": false }],
+        "react",
+        "stage-1"
+      ]
+    },
+    "development": {
+      "presets": [
+        ["env", {
+            "targets": {
+              "chrome": 54,
+              "ie": 11
+            },
+            "loose": true,
+            "include": ["transform-es2015-classes"]
+        }],
+        "react",
+        "stage-1"
+      ],
+      "plugins": [
+        "babel-plugin-transform-es2015-parameters",
+        "babel-plugin-transform-es2015-destructuring"
+      ]
+    },
+    "test": {
+      "sourceMap": "inline",
+      "presets": [
+        "es2015",
+        "react",
+        "stage-1"
+      ],
+      "plugins": [
+        "transform-amd-to-commonjs"
+      ]
+    }
+  }
+}

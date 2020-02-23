@@ -1,0 +1,28 @@
+@import "~less/common.less";
+
+.crypto-app {
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  min-height: 500px;
+
+  @media screen and (max-width: 576px) {
+    padding: 15px;
+    min-height: 300px;
+  }
+
+  &__error {
+    color: red;
+    justify-content: center;
+  }
+
+  &__loading {
+    text-align: center;
+    padding: 5px;
+  }
+
+  &__content1 {
+    text-align: center;
+    margin: 30px;
+  }
+}

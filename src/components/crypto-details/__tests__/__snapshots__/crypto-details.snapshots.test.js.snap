@@ -1,0 +1,705 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component - CryptoDetails should render the CryptoDetails snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CryptoDetails
+    currencyData={
+      Immutable.Map {
+        "vol_24hr_pcnt": "-27.21",
+        "last_price": "9705.18401230",
+        "success": true,
+        "utc_date": "2020-02-22 21:41:01",
+        "coin_id": "BTC",
+        "currency": "USD",
+        "volume_24hr": "4126767296",
+        "time_stamp": "1582407661",
+        "price_24hr_pcnt": "0.50",
+        "currency_name": "United States Dollar",
+        "coin_name": "Bitcoin",
+        "source": "BraveNewCoin",
+      }
+    }
+    currencyStatus={true}
+    loadCoin={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "btc",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    router={
+      Object {
+        "params": Object {
+          "currencyId": "btc",
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <React.Fragment>
+        <div
+          className="crypto-details"
+        >
+          <h4
+            className="heading"
+          >
+            Bitcoin
+             | 
+            BTC
+          </h4>
+          <p
+            className="crypto-details__line-item price"
+          >
+            <strong>
+               Price: 
+            </strong>
+            $9,705.18
+          </p>
+          <p
+            className="crypto-details__line-item 24_hour_volume"
+          >
+            <strong>
+               24-hour-volume: 
+            </strong>
+            4,126,767,296
+          </p>
+          <p
+            className="crypto-details__line-item 100_coin"
+          >
+            $100 = 
+            0.010303771661955468
+             Coins
+          </p>
+          <p
+            className="crypto-details__line-item 250_coin"
+          >
+            $250 = 
+            0.025759429154888668
+             Coins
+          </p>
+          <p
+            className="crypto-details__line-item 5000_coin"
+          >
+            $5,000 = 
+            0.5151885830977734
+             Coins
+          </p>
+        </div>
+      </React.Fragment>,
+      "className": "row crypto-app",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <div
+          className="crypto-details"
+        >
+          <h4
+            className="heading"
+          >
+            Bitcoin
+             | 
+            BTC
+          </h4>
+          <p
+            className="crypto-details__line-item price"
+          >
+            <strong>
+               Price: 
+            </strong>
+            $9,705.18
+          </p>
+          <p
+            className="crypto-details__line-item 24_hour_volume"
+          >
+            <strong>
+               24-hour-volume: 
+            </strong>
+            4,126,767,296
+          </p>
+          <p
+            className="crypto-details__line-item 100_coin"
+          >
+            $100 = 
+            0.010303771661955468
+             Coins
+          </p>
+          <p
+            className="crypto-details__line-item 250_coin"
+          >
+            $250 = 
+            0.025759429154888668
+             Coins
+          </p>
+          <p
+            className="crypto-details__line-item 5000_coin"
+          >
+            $5,000 = 
+            0.5151885830977734
+             Coins
+          </p>
+        </div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4
+              className="heading"
+            >
+              Bitcoin
+               | 
+              BTC
+            </h4>,
+            <p
+              className="crypto-details__line-item price"
+            >
+              <strong>
+                 Price: 
+              </strong>
+              $9,705.18
+            </p>,
+            <p
+              className="crypto-details__line-item 24_hour_volume"
+            >
+              <strong>
+                 24-hour-volume: 
+              </strong>
+              4,126,767,296
+            </p>,
+            <p
+              className="crypto-details__line-item 100_coin"
+            >
+              $100 = 
+              0.010303771661955468
+               Coins
+            </p>,
+            <p
+              className="crypto-details__line-item 250_coin"
+            >
+              $250 = 
+              0.025759429154888668
+               Coins
+            </p>,
+            <p
+              className="crypto-details__line-item 5000_coin"
+            >
+              $5,000 = 
+              0.5151885830977734
+               Coins
+            </p>,
+          ],
+          "className": "crypto-details",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Bitcoin",
+                " | ",
+                "BTC",
+              ],
+              "className": "heading",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Bitcoin",
+              " | ",
+              "BTC",
+            ],
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                   Price: 
+                </strong>,
+                "$9,705.18",
+              ],
+              "className": "crypto-details__line-item price",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": " Price: ",
+                },
+                "ref": null,
+                "rendered": " Price: ",
+                "type": "strong",
+              },
+              "$9,705.18",
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <strong>
+                   24-hour-volume: 
+                </strong>,
+                "4,126,767,296",
+              ],
+              "className": "crypto-details__line-item 24_hour_volume",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": " 24-hour-volume: ",
+                },
+                "ref": null,
+                "rendered": " 24-hour-volume: ",
+                "type": "strong",
+              },
+              "4,126,767,296",
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "$100 = ",
+                0.010303771661955468,
+                " Coins",
+              ],
+              "className": "crypto-details__line-item 100_coin",
+            },
+            "ref": null,
+            "rendered": Array [
+              "$100 = ",
+              0.010303771661955468,
+              " Coins",
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "$250 = ",
+                0.025759429154888668,
+                " Coins",
+              ],
+              "className": "crypto-details__line-item 250_coin",
+            },
+            "ref": null,
+            "rendered": Array [
+              "$250 = ",
+              0.025759429154888668,
+              " Coins",
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "$5,000 = ",
+                0.5151885830977734,
+                " Coins",
+              ],
+              "className": "crypto-details__line-item 5000_coin",
+            },
+            "ref": null,
+            "rendered": Array [
+              "$5,000 = ",
+              0.5151885830977734,
+              " Coins",
+            ],
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+      "type": Symbol(react.fragment),
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <React.Fragment>
+          <div
+            className="crypto-details"
+          >
+            <h4
+              className="heading"
+            >
+              Bitcoin
+               | 
+              BTC
+            </h4>
+            <p
+              className="crypto-details__line-item price"
+            >
+              <strong>
+                 Price: 
+              </strong>
+              $9,705.18
+            </p>
+            <p
+              className="crypto-details__line-item 24_hour_volume"
+            >
+              <strong>
+                 24-hour-volume: 
+              </strong>
+              4,126,767,296
+            </p>
+            <p
+              className="crypto-details__line-item 100_coin"
+            >
+              $100 = 
+              0.010303771661955468
+               Coins
+            </p>
+            <p
+              className="crypto-details__line-item 250_coin"
+            >
+              $250 = 
+              0.025759429154888668
+               Coins
+            </p>
+            <p
+              className="crypto-details__line-item 5000_coin"
+            >
+              $5,000 = 
+              0.5151885830977734
+               Coins
+            </p>
+          </div>
+        </React.Fragment>,
+        "className": "row crypto-app",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <div
+            className="crypto-details"
+          >
+            <h4
+              className="heading"
+            >
+              Bitcoin
+               | 
+              BTC
+            </h4>
+            <p
+              className="crypto-details__line-item price"
+            >
+              <strong>
+                 Price: 
+              </strong>
+              $9,705.18
+            </p>
+            <p
+              className="crypto-details__line-item 24_hour_volume"
+            >
+              <strong>
+                 24-hour-volume: 
+              </strong>
+              4,126,767,296
+            </p>
+            <p
+              className="crypto-details__line-item 100_coin"
+            >
+              $100 = 
+              0.010303771661955468
+               Coins
+            </p>
+            <p
+              className="crypto-details__line-item 250_coin"
+            >
+              $250 = 
+              0.025759429154888668
+               Coins
+            </p>
+            <p
+              className="crypto-details__line-item 5000_coin"
+            >
+              $5,000 = 
+              0.5151885830977734
+               Coins
+            </p>
+          </div>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4
+                className="heading"
+              >
+                Bitcoin
+                 | 
+                BTC
+              </h4>,
+              <p
+                className="crypto-details__line-item price"
+              >
+                <strong>
+                   Price: 
+                </strong>
+                $9,705.18
+              </p>,
+              <p
+                className="crypto-details__line-item 24_hour_volume"
+              >
+                <strong>
+                   24-hour-volume: 
+                </strong>
+                4,126,767,296
+              </p>,
+              <p
+                className="crypto-details__line-item 100_coin"
+              >
+                $100 = 
+                0.010303771661955468
+                 Coins
+              </p>,
+              <p
+                className="crypto-details__line-item 250_coin"
+              >
+                $250 = 
+                0.025759429154888668
+                 Coins
+              </p>,
+              <p
+                className="crypto-details__line-item 5000_coin"
+              >
+                $5,000 = 
+                0.5151885830977734
+                 Coins
+              </p>,
+            ],
+            "className": "crypto-details",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Bitcoin",
+                  " | ",
+                  "BTC",
+                ],
+                "className": "heading",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Bitcoin",
+                " | ",
+                "BTC",
+              ],
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                     Price: 
+                  </strong>,
+                  "$9,705.18",
+                ],
+                "className": "crypto-details__line-item price",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": " Price: ",
+                  },
+                  "ref": null,
+                  "rendered": " Price: ",
+                  "type": "strong",
+                },
+                "$9,705.18",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <strong>
+                     24-hour-volume: 
+                  </strong>,
+                  "4,126,767,296",
+                ],
+                "className": "crypto-details__line-item 24_hour_volume",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": " 24-hour-volume: ",
+                  },
+                  "ref": null,
+                  "rendered": " 24-hour-volume: ",
+                  "type": "strong",
+                },
+                "4,126,767,296",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "$100 = ",
+                  0.010303771661955468,
+                  " Coins",
+                ],
+                "className": "crypto-details__line-item 100_coin",
+              },
+              "ref": null,
+              "rendered": Array [
+                "$100 = ",
+                0.010303771661955468,
+                " Coins",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "$250 = ",
+                  0.025759429154888668,
+                  " Coins",
+                ],
+                "className": "crypto-details__line-item 250_coin",
+              },
+              "ref": null,
+              "rendered": Array [
+                "$250 = ",
+                0.025759429154888668,
+                " Coins",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "$5,000 = ",
+                  0.5151885830977734,
+                  " Coins",
+                ],
+                "className": "crypto-details__line-item 5000_coin",
+              },
+              "ref": null,
+              "rendered": Array [
+                "$5,000 = ",
+                0.5151885830977734,
+                " Coins",
+              ],
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        "type": Symbol(react.fragment),
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
