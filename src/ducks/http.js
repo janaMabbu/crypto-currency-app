@@ -2,6 +2,7 @@ export const callEndpoint = async (query) => {
   try {
      const queryUrl = 'https://bravenewcoin-v1.p.rapidapi.com/ticker?'+query
     const response = await fetch(queryUrl, {
+      method:'GET',
       headers: {
         'x-rapidapi-host': 'bravenewcoin-v1.p.rapidapi.com',
         'x-rapidapi-key': 'd02f90f79amshc01830fc7cd3502p104187jsnc09f947bdd82'

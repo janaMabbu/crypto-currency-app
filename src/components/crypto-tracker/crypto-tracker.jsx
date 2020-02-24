@@ -35,16 +35,16 @@ export class CryptoTracker extends PureComponent {
       <div className="row crypto-app">
         <div className="container crypto-app__tbody">
   <div className="row crypto-app__t-row">
-    <div className="col crypto-app__t-col">
+    <div className="col-3 crypto-app__t-col">
       <strong>Coin Name</strong>
     </div>
-    <div className="col crypto-app__t-col">
+    <div className="col-3 crypto-app__t-col">
       <strong>Symbol</strong>
     </div>
-    <div className="col crypto-app__t-col">
+    <div className="col-3 crypto-app__t-col">
       <strong>Latest Price</strong>
     </div>
-    <div className="col crypto-app__t-col">
+    <div className="col-sm-3 crypto-app__t-col">
     </div>
   </div>
     { currencies.map((coin)=> {
