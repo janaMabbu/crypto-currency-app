@@ -12,17 +12,56 @@
   }
 
   &__error {
-    color: red;
+    color: @red !important;
     justify-content: center;
   }
 
+  &__button {
+    background: @dark-grey;
+    width: auto;
+    border-radius: 5px;
+    color: @white;
+    @media screen and (max-width: 576px) {
+    width: 100%;
+    margin: 15px 0;
+    }
+  }
+
   &__loading {
-    text-align: center;
-    padding: 5px;
+    justify-content: center;
   }
 
   &__content1 {
     text-align: center;
     margin: 30px;
+  }
+
+  &__t-row {
+    min-height: 50px;
+    border-top: solid 1px @light-grey;
+    border-left: solid 1px @light-grey;
+    border-right: solid 1px @light-grey;
+    padding: 0 20px; 
+    align-items: center; 
+    justify-content: center;
+    background-color:@white;
+    color: @row-color;
+  }
+
+  &__t-col {
+    padding: 0 10px; 
+    overflow: hidden; 
+    color: @black;
+    text-overflow: ellipsis;
+  }
+
+  &__tbody {
+   .crypto-app__t-row:nth-child(even) {
+    color: @lightest-grey;
+    background: @white-human;
+    }
+   .crypto-app__t-row:last-child {
+     border-bottom: solid 1px @light-grey;
+    }
   }
 }

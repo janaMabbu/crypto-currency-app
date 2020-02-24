@@ -32,19 +32,19 @@ export class CryptoTracker extends PureComponent {
   render () {
     const { currencies } = this.props
     return (
-        <div className="row crypto-app">
-        <div class="container">
-  <div class="row">
-    <div class="col">
+      <div className="row crypto-app">
+        <div className="container crypto-app__tbody">
+  <div className="row crypto-app__t-row">
+    <div className="col crypto-app__t-col">
       <strong>Coin Name</strong>
     </div>
-    <div class="col">
+    <div className="col crypto-app__t-col">
       <strong>Symbol</strong>
     </div>
-    <div class="col">
+    <div className="col crypto-app__t-col">
       <strong>Latest Price</strong>
     </div>
-    <div class="col">
+    <div className="col crypto-app__t-col">
     </div>
   </div>
     { currencies.map((coin)=> {
@@ -54,9 +54,8 @@ export class CryptoTracker extends PureComponent {
             return this.renderFailureRow(coin)
           } else {
             return (
-              <div class="row">
-                <div class="spinner-border"></div>
-                <div>loading...</div>
+              <div key={coin.get('id')} className="row crypto-app__t-row crypto-app__loading">
+                <div className="spinner-border"></div>
               </div>)
           }
         }) }
@@ -68,19 +67,19 @@ export class CryptoTracker extends PureComponent {
   renderSuccessRow = (coin) => {
     const id = coin.get('id')
      return(
-    <div class="row" key={coin.get('id')}>
-      <div class="col">{coin.getIn(['data', 'coin_name'], '')}</div>
-      <div class="col">{coin.getIn(['data', 'coin_id'], '')}</div>
-      <div class="col">{formatCurrency(coin.getIn(['data', 'last_price'], 0),2)}</div>
-      <div class="col"><button id={ id } onClick={()=>this.setRoutePath(coin.get('id')) }>see Details</button></div>
+    <div className="row crypto-app__t-row" key={coin.get('id')}>
+      <div className="col-3 crypto-app__t-col">{coin.getIn(['data', 'coin_name'], '')}</div>
+      <div className="col-3 crypto-app__t-col">{coin.getIn(['data', 'coin_id'], '')}</div>
+      <div className="col-3 crypto-app__t-col">{formatCurrency(coin.getIn(['data', 'last_price'], 0),2)}</div>
+      <div className="col-sm-3 crypto-app__t-col"><button className="container crypto-app__button" id={ id } onClick={()=>this.setRoutePath(coin.get('id')) }>Details</button></div>
     </div>
     )
   }
 
   renderFailureRow = (coin) => {
      return(
-      <div class="row" className="row crypto-app__error" key={coin.get('id')}>
-        something wrong with loading coin details with id {coin.get('id')}
+      <div className="row crypto-app__t-row crypto-app__error" key={coin.get('id')}>
+        something wrong with loading coin with id "{coin.get('id')}"
       </div>
     )
   }

@@ -29,7 +29,7 @@ export class CryptoDetails extends PureComponent {
 
   render () {
     return (
-        <div className="row crypto-app">
+        <div className="row crypto-details">
         { this.renderContent() }
         </div>
     )
@@ -48,7 +48,7 @@ export class CryptoDetails extends PureComponent {
     if(currencyStatus === null) {
       return(
       <div className="crypto-details__loading">
-       <div class="spinner-border"></div>
+       <div className="spinner-border"></div>
        <div>loading...</div>
       </div>
     )
@@ -65,10 +65,10 @@ export class CryptoDetails extends PureComponent {
       <div className="crypto-details">
        <h4 className="heading">{currencyData.get('coin_name','')} | {currencyData.get('coin_id','')}</h4>
         <p className="crypto-details__line-item price" ><strong> Price: </strong>{ formatCurrency(currencyData.get('last_price', 0),2) }</p>
-        <p className="crypto-details__line-item 24_hour_volume"><strong> 24-hour-volume: </strong>{ formatNumber(currencyData.get('volume_24hr',0)) }</p>
-        <p className="crypto-details__line-item 100_coin">$100 = { 100/convertPriceToNumber(currencyData.get('last_price', 0))} Coins</p>
-        <p className="crypto-details__line-item 250_coin">$250 = { 250/convertPriceToNumber(currencyData.get('last_price', 0)) } Coins</p>
-        <p className="crypto-details__line-item 5000_coin">$5,000 = { 5000/convertPriceToNumber(currencyData.get('last_price', 0)) } Coins</p>
+        <p className="crypto-details__line-item volume"><strong> 24-hour-volume: </strong>{ formatNumber(currencyData.get('volume_24hr',0)) }</p>
+        <p className="crypto-details__line-item coin-100">$100 = { 100/convertPriceToNumber(currencyData.get('last_price', 0))} Coins</p>
+        <p className="crypto-details__line-item coin-250">$250 = { 250/convertPriceToNumber(currencyData.get('last_price', 0)) } Coins</p>
+        <p className="crypto-details__line-item coin-5000">$5,000 = { 5000/convertPriceToNumber(currencyData.get('last_price', 0)) } Coins</p>
       </div>
     )
   }

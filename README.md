@@ -17,22 +17,11 @@ Node 8.15 or greater and Npm 6.4.1 or greater
 4. npm run test:js:unit - to run all  unit test cases
 
 
-# Task Achievement
-1. Select a bus route from a list of available routes  -- (completed)
-2. Select a direction for a bus route -- (completed)
-3. For a given route and direction, display the stops  - (completed)
-4. Respond reasonably to browser back and forward buttons (for example, implement application routing)-- (completed)
-5. Include test code that validates your application works as expected. (completed)
-6. Include a README.md file -- (completed)
-
 # Application Routing
 I had implemented application routes with react-router library and these are some possible routes that this application supports and browser back and forward works reasonably.
 
-1. http://127.0.0.1:1337/#/nexttrip     (default route)
-2. http://127.0.0.1:1337/#/nexttrip/901  (with  routeID)
-3. http://127.0.0.1:1337/#/nexttrip/901/1   (with routeId and Direction ID)
-4. http://127.0.0.1:1337/#/about-us 
-5. http://127.0.0.1:1337/#/contact-us
+1. http://127.0.0.1:1337/#/cryptotracker     (default route)
+2. http://127.0.0.1:1337/#/cryptotracker/btc  (with  currencyID)
 
 
 
@@ -41,7 +30,7 @@ I had used Redux for maintaining the application state.
 
 Although maintaining the app data with the local state would be ideal for small applications, I had used react-redux to maintain the state and using redux-thunk as middle-ware to dispatch async actions for the below particular reason.
 ## Reason
-The reason is when the user selects the routes and view the stops and navigates to contact us page and all the components un-mounts and looses its local state. By having the application state on redux, the component can retain the user selection and data when the user clicks the browser back and lands on this page and the component mounts using the data from redux. so it does not need to make service calls to get the data as it is readily available on redux. so it optimizes the application and improves performance.
+The reason is when the user selects the routes and view the stops and navigates to contact us page and all the components un-mounts and looses its local state. By having the application state on redux, the component can retain the data when the user clicks the browser back and lands on this page and the component mounts using the data from redux. so it does not need to make service calls to get the data as it is readily available on redux. so it optimizes the application and improves performance.
 
 # using immutable objects
 I had used immutable objects in the react components for the below reasons.
@@ -61,7 +50,7 @@ this folder has all the business logic that a component needs, each file contain
 it has the test cases for the duck files, it's mostly unit test cases for the functions present in corresponding duck files.
 
 # CSS Overview
-I had used Less  CSS preprocessor in the project and again this is not needed for an application of this size, but I have declared some variables such as colors, width, and image path and reused them, it would make developers life much easy if we want to re-brand the site with different colors and different images or width.
+I had used Less  CSS preprocessor in the project and again this is not needed for an application of this size, but I have declared some variables such as colors,and reused them, for Example, it would make developers life much easy if we want to re-brand the site with different colors and different images or width.
 
 # Bundle
 npm run build: bundle to build the app. But the app is not yet production-ready because of some reasons below
@@ -75,10 +64,12 @@ npm run build: bundle to build the app. But the app is not yet production-ready 
 ### an npm package I had published last year
 https://www.npmjs.com/package/omit-deep-by-values
 
-### some webpages I had built/worked for bestbuy client
+### some webpages I had built/worked for BestBuy client
 
 1. https://www.bestbuy.com/wireless/transaction-types/render/carriers?numberOfPayments=1&purchaseType=FULL_SRP&skuId=6223303
+
 2. https://www.bestbuy.com/wireless/activated/upgradechecker
+
 3. https://www.bestbuy.com/wireless/activation-guide
 
 The above pages are not reponsive by default, we use useragent to decide what type of view the customer needs, you can switch to responsive view( mobile and IPad view) by clicking on the "Mobile Site" on the bottom of page
@@ -92,10 +83,4 @@ The above pages are not reponsive by default, we use useragent to decide what ty
 
 
 
-
-
-
-
-
-# crypto-currency-app
-# crypto-currency-app
+# Thank you for yourr time!

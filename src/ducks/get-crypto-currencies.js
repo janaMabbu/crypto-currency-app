@@ -54,7 +54,7 @@ export const loadCurrencies = (currencyList) => async (dispatch) => {
 export const loadCoin = (id) => async (dispatch, getState) => {
   const state = getState()
 
-  if (!getCurrencyDataById(state,id).isEmpty()) {
+  if (!getCurrencyById(state,id).isEmpty()) {
     // check if metro coin exists in redux store already and not trigger a service call
     // in case of browser back and navigating
       return

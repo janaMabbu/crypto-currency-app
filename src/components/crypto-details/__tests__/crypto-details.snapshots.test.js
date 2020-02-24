@@ -41,10 +41,10 @@ describe('Component - CryptoDetails', () => {
     const wrapper = shallow(<CryptoDetails {...props}/>)
     expect(wrapper.find('.heading').length).toBe(1)
     expect(wrapper.find('.price').length).toBe(1)
-    // expect(wrapper.find('.24_hour_volume').length).toBe(1)
-    // expect(wrapper.find('.100_coin').length).toBe(1)
-    // expect(wrapper.find('.250_coin').length).toBe(1)
-    // expect(wrapper.find('.5000_coin').length).toBe(1)
+    expect(wrapper.find('.volume').length).toBe(1)
+    expect(wrapper.find('.coin-100').length).toBe(1)
+    expect(wrapper.find('.coin-250').length).toBe(1)
+    expect(wrapper.find('.coin-5000').length).toBe(1)
   })
 
   it('should render the CryptoDetails fallback', () => {
