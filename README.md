@@ -83,4 +83,4 @@ The above pages are not reponsive by default, we use useragent to decide what ty
 
 
 
-# Thank you for yourr time!
+# Thank you for your time!
